@@ -1,3 +1,8 @@
+install:
+	yarn
+
+init: init build run
+
 run:
 	npm run lambda-serve
 
