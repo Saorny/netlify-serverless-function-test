@@ -1,7 +1,7 @@
 install:
 	yarn
 
-init: init build run
+init: install build run
 
 run:
 	npm run lambda-serve
