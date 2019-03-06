@@ -1,6 +1,6 @@
 install:
 	echo "INSTALL DEPENDENCIES"
-	yarn
+	npm install
 
 init: install build run
 	echo "DONE!"
