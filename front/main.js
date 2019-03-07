@@ -1,5 +1,3 @@
-module.exports = test;
-
 const test = async() => {
   try {
     await (await fetch('/.netlify/dist/test')).json();
@@ -8,3 +6,5 @@ const test = async() => {
     console.log('ERROR', e)
   }
 };
+
+test();
