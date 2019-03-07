@@ -2,6 +2,15 @@ const axios = require('axios');
 
 exports.handler = function(event, context, callback) {
 
+  callback(null, {
+    statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+    },
+    body: JSON.stringify({res: 'ok'})
+  });
+
   // const { API_URL, API_CLIENT_ID, API_CLIENT_SECRET } = process.env;
   // const URL = `${API_URL}?client_id=${API_CLIENT_ID}&client_secret=${API_CLIENT_SECRET}`;
   //
@@ -41,4 +50,4 @@ exports.handler = function(event, context, callback) {
     console.log('A')
     // getUsers();
   }
-}
+};

@@ -7,7 +7,7 @@
 //   }
 // };
 
-console.log('fetch users');
+console.log('test');
 // fetchUsers()
 //   .then(data => {
 //     let userList = document.querySelector('#users');
