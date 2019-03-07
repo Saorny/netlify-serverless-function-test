@@ -1,12 +1,10 @@
 install:
-	echo "INSTALL DEPENDENCIES"
 	npm install
 
 init: install build run
-	echo "DONE!"
 
 run:
-	eho "LAUNCHING APP"
+	echo "LAUNCHING APP"
 	npm run lambda-serve
 
 build:
