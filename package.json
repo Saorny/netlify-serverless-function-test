@@ -13,5 +13,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "netlify-lambda": "^1.4.2"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0"
   }
 }

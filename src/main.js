@@ -1,5 +1,10 @@
 const fetchUsers = async() => {
-  await (await fetch('/.netlify/functions/getusers')).json();
+  try {
+    await (await fetch('/.netlify/functions/getusers')).json();
+  }
+  catch(e) {
+    console.log('ERROR', e)
+  }
 };
 
 fetchUsers()

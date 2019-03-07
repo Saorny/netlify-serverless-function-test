@@ -1,7 +1,9 @@
+clean:
+	rm dist/*.js
+	rm -rdf node_modules
+
 install:
 	npm install
-
-init: install build run
 
 run:
 	echo "LAUNCHING APP"
@@ -10,5 +12,7 @@ run:
 build:
 	echo "BUILDING APP"
 	npm run build
+
+init: install build run
 
 restart: build run
