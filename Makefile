@@ -9,6 +9,6 @@ run:
 
 build:
 	echo "BUILDING APP"
-	npm run lambda-build
+	npm run build
 
 restart: build run
