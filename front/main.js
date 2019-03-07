@@ -1,4 +1,4 @@
-modules.exports = test;
+module.exports = test;
 
 const test = async() => {
   try {
